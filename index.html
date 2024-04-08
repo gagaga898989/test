@@ -2,44 +2,20 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>現在時刻</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
-    #clock {
-        font-size: 48px;
-        color: #333;
-    }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レスポンシブデザイン</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<div id="clock"></div>
-
-<script>
-function updateTime() {
-    const now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
-
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
-
-    document.getElementById('clock').textContent = hours + ':' + minutes + ':' + seconds;
-}
-
-setInterval(updateTime, 1000);
-updateTime();
-</script>
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <div class="box">Box 7</div>
+    <div class="box">Box 8</div>
+</div>
 </body>
 </html>
